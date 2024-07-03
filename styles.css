@@ -78,3 +78,9 @@ h1{
     font-family: "Marck Script", cursive;
 
 }
+@media(max-width: 600px){#d-button{width: 400px}
+    
+}
+@media(max-width: 100px){#d-button{width: 90px}
+    
+}
