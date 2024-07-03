@@ -73,7 +73,7 @@ const clickBtn =(ex, ex1)=>{
    
 }
 
-
+alert("this is two player game!,,, one person is X while the other is O,,, first person to fill three box in a line wins(3 consecutive boxes),,, one game player to be released soon🥳🥳🥳")
 btn1.addEventListener("click", ()=>{ 
     clickBtn(btn1, "1");
 });
