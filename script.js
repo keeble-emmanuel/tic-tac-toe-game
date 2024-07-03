@@ -14,7 +14,7 @@ const dialog = document.getElementById("end-dialog");
 const restart = document.getElementById("restart");
 const statement =document.getElementById("statement");
 const ss =document.querySelectorAll("btn")
-//const btnClass = document.getElementsByClassName('btn');
+
 const opp = document.getElementById("turn");
 const xarray = [];
 const oarray = [];
@@ -28,6 +28,8 @@ const re7 = ["1", "5", "9"];
 const re8 = ["3", "5", "7"];
 let turn  = 1
 let reset = 1;
+const over1 = [];
+let allboxes =["1", "2", "3", "4", "5", "6", "7", "8", "9"]
 
 
 opp.textContent = "turn: X";
@@ -38,10 +40,9 @@ const test =(arr1, arr2)=>{
   
 }
 const finished=()=>{
-
-        turn  != 1? statement.textContent = " X wins" : statement.textContent = " O wins" ;
-        dialog.showModal(); 
-        oarray=[];    
+    turn != 1? statement.textContent = " X wins" : statement.textContent = " O wins" ;
+    dialog.showModal(); 
+    oarray=[];    
     
 }
 const clickBtn =(ex, ex1)=>{
@@ -49,6 +50,10 @@ const clickBtn =(ex, ex1)=>{
     ex.innerText = turn == 1? "x": "o";
     turn  = turn * (-1);
     turn == 1? xarray.push(ex1): oarray.push(ex1);
+    over1.push(ex1);
+    if(over1.length == 9){
+        dialog.showModal();
+    }
     //dis2.textContent = "";
     if(turn ==  1){
         test(re1, xarray)? finished():
@@ -58,7 +63,7 @@ const clickBtn =(ex, ex1)=>{
         test(re5, xarray)? finished():
         test(re6, xarray)? finished():
         test(re7, xarray)? finished():
-        test(re8, xarray)? finished(): dis2.textContent = "next"
+        test(re8, xarray)? finished(): dis2.textContent = "next" 
     }else{
         test(re1, oarray)? finished():
         test(re2, oarray)? finished():
@@ -67,13 +72,15 @@ const clickBtn =(ex, ex1)=>{
         test(re5, oarray)? finished():
         test(re6, oarray)? finished():
         test(re7, oarray)? finished():
-        test(re8, oarray)? finished(): dis2.textContent = "next"
+        test(re8, oarray)? finished(): dis2.textContent = "next" 
     }
     turn==1? opp.textContent ="turn: X": opp.textContent ="turn: O"
    
 }
 
-alert("this is a two player game,  one is x and the other is o, inorder to win tick three boxes in a line(consecutive three boxes")
+alert("this is a two player game,  one is x and the other is o, inorder to win tick three boxes in a line(consecutive three boxes)")
+
+
 btn1.addEventListener("click", ()=>{ 
     clickBtn(btn1, "1");
 });
@@ -146,6 +153,17 @@ restart.addEventListener("click", ()=>{
     oarray.pop();
     oarray.pop();
     oarray.pop();
+    over1.pop();
+    over1.pop();
+    over1.pop();
+    over1.pop();
+    over1.pop();
+    over1.pop();
+    over1.pop();
+    over1.pop();
+    over1.pop();
+
+
     
 })
 
