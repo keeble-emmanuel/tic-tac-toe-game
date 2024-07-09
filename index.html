@@ -16,13 +16,18 @@
     </head> 
     <body>
         
-        <h1>tic tac toe<sup>by keeble</sup></h2>
+        <h1>tic tac toe</h2>
             <div id="turn">  
             </div>
         <div id="btt">
             
         </diV>
-       
+        <dialog id="start-dialog">
+            <form method="dialog">
+                <p id="msg">this is a two player game, X and O , first player to tick 3 boxes in line wins</p>
+                <button id="play">play</button>
+            </form>
+        </dialog>
         <div id="d-button">
             <button id="1" class='btn'>.</button>
             <button id="2" class='btn'>.</button>
@@ -37,10 +42,10 @@
         <div id="q">
             
         </div>
-        <p>produced by keeble, BEYSTAT</p>
+        <p id="signature">produced by KEEBLE,BEYSTAT</p>
         <dialog id="end-dialog">
             <form method="dialog">
-                <p id="statement">game over!!!</p>
+                <p id="statement">game over!!! draw game</p>
                 <button id="restart">restart !!</button>
             </form>
         </dialog>
