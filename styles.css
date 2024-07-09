@@ -149,7 +149,7 @@ h1{
     font-size: 18px;  
 }}
 @media(max-width: 200px){#d-button{
-    left: 8px;
+    left: 2px;
     width: 200vw;
     height: 200vw;
    
