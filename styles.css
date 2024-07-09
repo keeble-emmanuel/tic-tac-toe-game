@@ -148,4 +148,19 @@ h1{
 #msg{
     font-size: 18px;  
 }}
+@media(max-width: 400px){#d-button{
+    left: 80px;
+    width: 55vw;
+    height: 55vw;
+   
+    
+    
+}
+.btn{
+    font-size: 50px;  
+}
+#msg{
+    font-size: 18px;  
+}}
+
 
