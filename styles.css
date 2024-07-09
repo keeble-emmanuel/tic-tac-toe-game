@@ -54,7 +54,7 @@ h1{
 #signature{
     position:absolute;
     left: 0px;
-    top: 1px;
+    bottom: 1px;
     font-size: 12px;
     font-family:  cursive;
 
@@ -85,8 +85,7 @@ h1{
     align-items: flex-end;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    position: absolute; 
-    left: 250px;
+    
 
 
 }
@@ -120,10 +119,10 @@ h1{
 
 }
 
-@media(max-width: 900px){#d-button{
-    left: 100px;
-    width: 550px;
-    height: 550px;
+@media only screen and (min-width: 768px){#d-button{
+    
+    width: 450px;
+    height: 450px;
    
     
     
