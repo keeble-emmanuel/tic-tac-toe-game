@@ -120,16 +120,16 @@ h1{
 
 }
 
-@media(max-width: 900px){#d-button{
-    left: 150px;
-    width: 60vw;
-    height: 60vw;
+@media(max-width: 800px){#d-button{
+    left: 100px;
+    width: 70vw;
+    height: 70vw;
    
     
     
 }
 .btn{
-    font-size: 60px;  
+    font-size: 50px;  
 }
 #msg{
     font-size: 18px;  
