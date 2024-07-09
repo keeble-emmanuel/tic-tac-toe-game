@@ -119,27 +119,3 @@ h1{
     font-family: "Marck Script", cursive;
 
 }
-@media(max-width: 300px){#d-button{
-    left: 100px;
-    width: 30vw;
-    height: 30vw;
-    
-}
-.btn{
-    font-size: 35px;  
-}
-#msg{
-    font-size: 14px;  
-}}
-@media(max-width: 900px){#d-button{
-    left: 200px;
-    width: 40vw;
-    height: 40vw;
-}
-.btn{
-    font-size: 42px;  
-}
-#msg{
-    font-size: 18px;  
-}}
-
