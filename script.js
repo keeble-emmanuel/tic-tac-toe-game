@@ -11,8 +11,12 @@ const btn8 =document.getElementById("8");
 const btn9 =document.getElementById("9");
 const dis2 =document.getElementById("q");
 const dialog = document.getElementById("end-dialog");
+const dialog1 = document.getElementById("start-dialog");
 const restart = document.getElementById("restart");
+const start_game = document.getElementById("play");
 const statement =document.getElementById("statement");
+const msg =document.getElementById("msg");
+
 const ss =document.querySelectorAll("btn")
 
 const opp = document.getElementById("turn");
@@ -63,7 +67,7 @@ const clickBtn =(ex, ex1)=>{
         test(re5, xarray)? finished():
         test(re6, xarray)? finished():
         test(re7, xarray)? finished():
-        test(re8, xarray)? finished(): dis2.textContent = "next" 
+        test(re8, xarray)? finished(): null
     }else{
         test(re1, oarray)? finished():
         test(re2, oarray)? finished():
@@ -72,15 +76,13 @@ const clickBtn =(ex, ex1)=>{
         test(re5, oarray)? finished():
         test(re6, oarray)? finished():
         test(re7, oarray)? finished():
-        test(re8, oarray)? finished(): dis2.textContent = "next" 
+        test(re8, oarray)? finished(): null
     }
     turn==1? opp.textContent ="turn: X": opp.textContent ="turn: O"
    
 }
 
-alert("this is a two player game,  one is x and the other is o, inorder to win tick three boxes in a line(consecutive three boxes)")
-
-
+dialog1.showModal();
 btn1.addEventListener("click", ()=>{ 
     clickBtn(btn1, "1");
 });
@@ -123,8 +125,12 @@ btn9.addEventListener("click", ()=>{
     clickBtn(btn9, "9");
    
 });
+start_game.addEventListener("click", ()=>{
+    dialog1.close();
+});
 restart.addEventListener("click", ()=>{
     dialog.close();
+    statement.textContent = "game over!!! draw game"
     turn =1;
     btn1.innerText = '.';
     btn1.disabled = false;
