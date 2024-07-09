@@ -77,8 +77,8 @@ h1{
     background-color: rgb(138, 138, 212);
 }
 #d-button{
-    width: 40vw;
-    height: 40vw;
+    width: 70vw;
+    height: 70vw;
     margin: 0 auto;
     border: 2px solid transparent;
     display: flex;
@@ -120,7 +120,9 @@ h1{
 
 }
 @media(max-width: 300px){#d-button{
-    left: 900px;
+    left: 100px;
+    width: 30vw;
+    height: 30vw;
     
 }
 .btn{
@@ -131,7 +133,8 @@ h1{
 }}
 @media(max-width: 900px){#d-button{
     left: 200px;
-    
+    width: 40vw;
+    height: 40vw;
 }
 .btn{
     font-size: 42px;  
