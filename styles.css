@@ -77,8 +77,8 @@ h1{
     background-color: rgb(138, 138, 212);
 }
 #d-button{
-    width: 70vw;
-    height: 70vw;
+    width: 30vw;
+    height: 30vw;
     margin: 0 auto;
     border: 2px solid transparent;
     display: flex;
@@ -119,3 +119,33 @@ h1{
     font-family: "Marck Script", cursive;
 
 }
+
+@media(max-width: 900px){#d-button{
+    left: 150px;
+    width: 60vw;
+    height: 60vw;
+   
+    
+    
+}
+.btn{
+    font-size: 60px;  
+}
+#msg{
+    font-size: 18px;  
+}}
+@media(max-width: 1100px){#d-button{
+    left: 150px;
+    width: 45vw;
+    height: 45vw;
+   
+    
+    
+}
+.btn{
+    font-size: 70px;  
+}
+#msg{
+    font-size: 18px;  
+}}
+
