@@ -146,7 +146,8 @@ dialog{
     position: absolute;
     margin: 0 auto;
     top: 500px;
-    font-size: 70px;
+    font-size: 40px;
+    
 }
 #end-dialog{
     position: absolute;
