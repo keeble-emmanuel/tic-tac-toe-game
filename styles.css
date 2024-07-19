@@ -124,15 +124,41 @@ h1{
 
 }
 
-@media only screen and (min-width: 768px){#d-button{
-    width: 400px;
-    height: 400px; 
+@media only screen and (max-width: 720px){
+    #d-button{
+    width: 500px;
+    height: 500px;
+    padding-top: 200px; 
 }
 .btn{
     font-size: 60px;  
 }
 #msg{
     font-size: 18px;  
+}
+dialog{
+    position: absolute;
+    margin: 0 auto;
+    top: 500px;
+    font-size: 70px;
+}
+#end-dialog{
+    position: absolute;
+    margin: 0 auto;
+    top: 500px;
+    height: 150px;
+    font-size: 40px;
+}
+#turn{
+    font-size: 70px;
+    padding-top: 30px;
+}
+#restart{
+    font-size: 30px;
+    
+}
+#signature{
+    font-size: 50px;
 }
 
 }
