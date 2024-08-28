@@ -1,6 +1,6 @@
 :root{ 
-    --width1: 65vh;
-    --height: 70vh
+    --width1: 400px;
+    --height: 400px
 }
 body{
     background-color: rgb(221, 200, 134);
@@ -8,21 +8,20 @@ body{
     font-family: "Rubik Doodle Shadow", system-ui;      
     color: red;
     font-weight: 350;
-    font-style: normal;
-      
-      
-
+    font-style: normal;   
 }
 #end-dialog{
     width:70px;
     margin: auto;
 }
 #start-dialog{
-    background-color: black;
-    opacity: 0.7;
+    background-color: rgba(15, 8, 8, 0.7);
     border: transparent;
     border-radius: 10px;
     text-align: center;
+    position: static;
+    top: 10px;
+    width:200px;
 }
 #statement{
     color:white;
@@ -30,11 +29,10 @@ body{
 }
 #msg{
     color: rgb(250, 250, 250);
-    padding-bottom: 30px;
     font-size: 12px;
-    width:300px;
-    font-family: 'Times New Roman', Times, serif;
     
+    font-family: 'Times New Roman', Times, serif;
+       
 }
 #play{
     border: 1px solid transparent;
@@ -57,7 +55,6 @@ h1{
 
 }
 #signature{
-    
     font-size: 12px;
     font-family:  'Times New Roman', Times, serif;
     margin: 0 auto;
@@ -66,7 +63,7 @@ h1{
 }
 #turn{
     margin: 0 auto;
-    width: 500px;
+    width: 400px;
     font-size: 30px;
     font-family: "Marck Script", cursive;
     text-align: center;
@@ -82,27 +79,20 @@ h1{
     background-color: rgb(138, 138, 212);
 }
 #d-button{
-    width: 350px;
-    height: 350px;
+    width: var(--width1);
+    height: var(--width1);
     margin: 0 auto;
     border: 2px solid transparent;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    
-
 
 }
 .btn{
-    width: 33%;
-    height: 33%;
-    font-size: 40px;
+    width:calc(var(--width1)* 0.32);
+    height:calc(var(--width1)* 0.32);
+    font-size: 50px;
     background: rgb(142, 113, 81);
-    color: rgba(238, 244, 239, 0.439);
+    color: rgba(16, 16, 16, 0.439);
     border: 1px solid white;
     border-radius: 10px;
-
     
 }
 .btn:disabled{
@@ -110,8 +100,8 @@ h1{
 }
 #end-dialog{
     border: 1px solid transparent;
-    width: 30vw;
-    height: 20vh;
+    width: 200px;
+    height: 200px;
     background: rgb(231, 4, 4);
     text-align: center;
     font-size: large;
@@ -130,46 +120,7 @@ hr{
     
 }
 
-@media only screen and (max-width: 720px){
-    #d-button{
-    width: 500px;
-    height: 500px;
-    padding-top: 200px; 
-}
-.btn{
-    font-size: 60px;  
-}
-#msg{
-    font-size: 18px;  
-}
-dialog{
-    position: absolute;
-    margin: 0 auto;
-    top: 500px;
-    font-size: 40px;
-    
-}
-#end-dialog{
-    position: absolute;
-    margin: 0 auto;
-    top: 500px;
-    height: 150px;
-    font-size: 40px;
-}
-#turn{
-    font-size: 70px;
-    padding-top: 30px;
-}
-#restart{
-    font-size: 20px;
-    
-}
-#signature{
-    font-size: 30px;
 
-}
-
-}
 
 
 
